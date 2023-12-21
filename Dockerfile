@@ -1,5 +1,4 @@
 FROM node:alpine
-FROM python:alpine
 
 WORKDIR /app
 
@@ -8,10 +7,8 @@ COPY package.json
 RUN npm install
 
 COPY index.js.
-COPY main.py .
 
-
-CMD ["node", "index.js", "python", "main.py"]
+CMD ["node", "index.js"]
 
 
 # FROM python:alpine
