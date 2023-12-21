@@ -1,19 +1,15 @@
-
 FROM node:14
 
-ARG APP_DIR=app
+WORKDIR /app
 
-RUN mkdir -p ${APP_DIR}
-
-WORKDIR ${APP_DIR}
-
-COPY package*.json ./
-
+COPY package.json .
+COPY package-lock.json .
 RUN npm install
 
 COPY . .
 
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
+
 
 FROM python:alpine
 
