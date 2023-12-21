@@ -1,21 +1,21 @@
-FROM node:alpine
+FROM node:alpine, python:alpine
 
 WORKDIR /app
 
-COPY package.json .
+COPY package.json, main.py .
 
 RUN npm install
 
-COPY index.js .
+COPY index.js, main.py .
 
-CMD ["node", "index.js"]
+CMD ["node", "index.js", "python", "main.py"]
 
 
-FROM python:alpine
+# FROM python:alpine
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY main.py .
+# COPY main.py .
 
-CMD ["python" , "main.py"]
+# CMD ["python" , "main.py"]
 
