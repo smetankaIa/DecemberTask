@@ -11,11 +11,11 @@ COPY index.js .
 CMD ["node", "index.js"]
 
 
-FROM python:alpine
+# FROM python:alpine
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY main.py .
+# COPY main.py .
 
-CMD ["python" , "main.py"]
+# CMD ["python" , "main.py"]
 
