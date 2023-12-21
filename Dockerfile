@@ -1,10 +1,3 @@
-# FROM python:alpine
-
-# WORKDIR /app
-
-# COPY main.py .
-
-# ENTRYPOINT ["python" , "main.py"]
 
 FROM node:14
 
@@ -21,3 +14,12 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "start"]
+
+FROM python:alpine
+
+WORKDIR /app
+
+COPY main.py .
+
+ENTRYPOINT ["python" , "main.py"]
+
