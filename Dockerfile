@@ -17,5 +17,5 @@ WORKDIR /app
 
 COPY main.py .
 
-ENTRYPOINT ["python" , "main.py"]
+CMD ["python" , "main.py"]
 
