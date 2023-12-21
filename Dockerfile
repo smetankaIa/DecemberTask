@@ -6,7 +6,7 @@ COPY package.json .
 COPY package-lock.json .
 RUN npm install
 
-COPY . .
+COPY index.js .
 
 CMD ["node", "index.js"]
 
