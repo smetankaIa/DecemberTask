@@ -1,10 +1,10 @@
-FROM python:alpine
+# FROM python:alpine
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY main.py .
+# COPY main.py .
 
-ENTRYPOINT ["python" , "main.py"]
+# ENTRYPOINT ["python" , "main.py"]
 
 FROM node:14
 
