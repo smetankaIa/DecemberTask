@@ -1,5 +1,5 @@
 {
-  "name": "node-app",
+  "name": "node-run",
   "version": "1.0.0",
   "description": "The best way to manage your Node app using Docker",
   "main": "index.js",
